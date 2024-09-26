@@ -1,6 +1,5 @@
 # app/config.py
 
-# Map OpenAI model names to TextSynth model names
 MODEL_MAP = {
     "chat": "flan_t5_base_q8",        # Chat model
     "image": "stable_diffusion_1.4",  # Image model

@@ -22,6 +22,7 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+# Func to save Logs.
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
 

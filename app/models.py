@@ -33,8 +33,8 @@ class ImageGenerationRequestBody(BaseModel):
 
 class AudioGenerationRequestBody(BaseModel):
     model: Optional[str] = Field(default="whisper-1")
-    audio: str  # Assuming base64-encoded audio
+    audio: str
     language: Optional[str] = None
     prompt: Optional[str] = None
-    response_format: Optional[str] = 'json'  # Adjust based on TextSynth API
+    response_format: Optional[str] = 'json'
     user: Optional[str] = None

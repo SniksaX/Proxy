@@ -14,17 +14,15 @@ async def audio_transcriptions(
     model: str = Form("whisper-1"),
     prompt: Optional[str] = Form(None),
     response_format: Optional[str] = Form('json'),
-    temperature: Optional[float] = Form(None),  # Not used in this implementation
+    temperature: Optional[float] = Form(None),
     language: Optional[str] = Form(None),
     authorization: Optional[str] = Header(None)
 ):
     if response_format not in ['json', 'text', 'srt', 'verbose_json', 'vtt']:
         raise HTTPException(status_code=400, detail=f"Unsupported response format: {response_format}")
 
-    # Read the audio file
     audio_bytes = await file.read()
 
-    # Prepare the request to TextSynth
     transcription_result = await generate_audio(
         model_name=model,
         audio_bytes=audio_bytes,
@@ -32,7 +30,6 @@ async def audio_transcriptions(
         prompt=prompt
     )
 
-    # Now, process the transcription_result to match OpenAI's API response
     if response_format == 'json':
         response_body = {
             "text": transcription_result.get('text', '')
