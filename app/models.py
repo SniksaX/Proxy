@@ -32,7 +32,7 @@ class ImageGenerationRequestBody(BaseModel):
     user: Optional[str] = None
 
 class AudioGenerationRequestBody(BaseModel):
-    model: Optional[str] = Field(default="whisper-1")
+    model: Optional[str] = Field(default="whisper_large_v3_q8")
     audio: str
     language: Optional[str] = None
     prompt: Optional[str] = None

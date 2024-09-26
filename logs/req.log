@@ -83,3 +83,19 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2024-09-26 13:23:35,505 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
 2024-09-26 13:23:35,538 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
 2024-09-26 13:24:11,855 INFO Response Status: 200
+2024-09-26 14:20:12,593 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 14:20:12,647 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 14:20:14,939 ERROR Error contacting TextSynth server: peer closed connection without sending complete message body (incomplete chunked read)
+2024-09-26 14:20:14,941 INFO Response Status: 500
+2024-09-26 14:20:35,046 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 14:20:35,084 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 14:21:14,004 INFO Response Status: 200
+2024-09-26 14:21:23,453 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 14:21:23,492 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 14:21:59,173 INFO Response Status: 200
+2024-09-26 14:22:06,060 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 14:22:06,124 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 14:22:42,362 INFO Response Status: 200
+2024-09-26 14:23:14,717 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 14:23:14,779 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 14:23:53,517 INFO Response Status: 200
