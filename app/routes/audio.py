@@ -3,17 +3,15 @@
 from fastapi import APIRouter, Request, Header, HTTPException, UploadFile, File, Form, Response
 from fastapi.responses import JSONResponse
 from typing import Optional
+from app.config import AUDIO_SAVE_DIRECTORY
 import uuid
-import os  
+import os
 
 from ..utils import generate_audio, segments_to_srt, segments_to_vtt
 
 router = APIRouter()
 
 # directory where audio files will be saved
-AUDIO_SAVE_DIRECTORY = 'static/audio'
-
-# Make sure the directory exists
 os.makedirs(AUDIO_SAVE_DIRECTORY, exist_ok=True)
 
 @router.post("/v1/audio/transcriptions")

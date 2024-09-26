@@ -12,4 +12,6 @@ NODEJS_SERVER_URL = "http://127.0.0.1:5000/v1/images/generations"
 
 IMAGE_SAVE_DIRECTORY = "static/images"
 
+AUDIO_SAVE_DIRECTORY = 'static/audio'
+
 IMAGE_DOMAIN = "http://localhost:8000/static/images"

@@ -16,7 +16,11 @@ async def image_generations(
     body: ImageGenerationRequestBody,
     authorization: Optional[str] = Header(None)
 ):
-    model = body.model or "stable-diffusion-1.4"
+    model = body.model
+
+    if not model :
+        raise HTTPException(status_code=400, detail=f"Please enter a model: {response_format}")
+
     prompt = body.prompt
     n = body.n or 1
     size = body.size or '512x512'

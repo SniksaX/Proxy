@@ -1,7 +1,6 @@
 # app/main.py
 
 from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
 import logging
 from fastapi.staticfiles import StaticFiles
 import os
