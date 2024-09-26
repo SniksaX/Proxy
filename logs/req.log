@@ -1,0 +1,78 @@
+2024-09-25 15:34:22,328 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Tell me a story.'}], 'max_tokens': 100, 'temperature': 0.7, 'stream': True}
+2024-09-25 15:34:22,356 INFO Response Status: 200
+2024-09-25 15:34:22,358 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/flan_t5_base_q8/completions "HTTP/1.1 200 OK"
+2024-09-25 15:35:55,712 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Hello, how are you?'}], 'max_tokens': 100, 'temperature': 0.7}
+2024-09-25 15:35:55,739 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/flan_t5_base_q8/completions "HTTP/1.1 200 OK"
+2024-09-25 15:35:55,833 INFO Response Status: 200
+2024-09-25 15:41:05,859 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:41:05,917 INFO HTTP Request: POST http://127.0.0.1:5000/v1/images/generations/stable_diffusion_1.4/text_to_image "HTTP/1.1 404 Not Found"
+2024-09-25 15:41:05,918 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:5000/v1/images/generations/stable_diffusion_1.4/text_to_image'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-25 15:41:05,918 INFO Response Status: 404
+2024-09-25 15:45:11,237 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion-1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:45:11,238 ERROR Model stable-diffusion-1.4 not supported
+2024-09-25 15:45:11,239 INFO Response Status: 400
+2024-09-25 15:45:22,176 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:45:22,177 ERROR Model stable-diffusion_1.4 not supported
+2024-09-25 15:45:22,178 INFO Response Status: 400
+2024-09-25 15:46:08,765 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:46:08,767 ERROR Model stable-diffusion_1.4 not supported
+2024-09-25 15:46:08,767 INFO Response Status: 400
+2024-09-25 15:46:10,696 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:46:10,697 ERROR Model stable-diffusion_1.4 not supported
+2024-09-25 15:46:10,697 INFO Response Status: 400
+2024-09-25 15:46:29,810 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable_diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:46:29,811 ERROR Model stable_diffusion_1.4 not supported
+2024-09-25 15:46:29,811 INFO Response Status: 400
+2024-09-25 15:47:01,164 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:47:02,213 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-25 15:47:02,218 INFO Response Status: 200
+2024-09-25 15:47:10,421 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:47:11,492 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-25 15:47:11,496 INFO Response Status: 200
+2024-09-25 15:48:46,947 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:48:48,023 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-25 15:48:48,028 INFO Response Status: 200
+2024-09-25 15:48:49,394 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/6f995fec-3aa5-46e3-a9b3-f6a08c13dbb6.png | Body: Unable to read body
+2024-09-25 15:48:49,395 INFO Response Status: 404
+2024-09-25 15:48:49,442 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/favicon.ico | Body: Unable to read body
+2024-09-25 15:48:49,442 INFO Response Status: 404
+2024-09-25 15:50:21,809 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 15:50:22,880 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-25 15:50:22,884 INFO Response Status: 200
+2024-09-25 15:50:23,752 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/759b1137-b119-4085-be18-19e892fc7029.png | Body: Unable to read body
+2024-09-25 15:50:23,756 INFO Response Status: 200
+2024-09-25 15:50:38,768 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/759b1137-b119-4085-be18-19e892fc7029.png | Body: Unable to read body
+2024-09-25 15:50:38,770 INFO Response Status: 304
+2024-09-25 15:50:56,845 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/08bda637-e6ca-43b8-a085-ca25b500d058.png | Body: Unable to read body
+2024-09-25 15:50:56,845 INFO Response Status: 200
+2024-09-25 16:57:19,753 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 16:57:20,787 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-25 16:57:20,790 INFO Response Status: 200
+2024-09-25 16:59:11,505 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
+2024-09-25 16:59:12,574 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-25 16:59:12,577 INFO Response Status: 200
+2024-09-26 12:44:29,016 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:44:29,019 ERROR Model whisper-1 not supported
+2024-09-26 12:44:29,019 INFO Response Status: 400
+2024-09-26 12:45:20,277 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:45:20,316 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 12:45:56,939 INFO Response Status: 200
+2024-09-26 12:53:50,502 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:53:50,536 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 12:54:28,807 INFO Response Status: 200
+2024-09-26 12:55:21,230 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:55:21,262 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 12:55:57,482 INFO Response Status: 200
+2024-09-26 12:57:16,540 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:57:16,605 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 12:57:53,661 INFO Response Status: 200
+2024-09-26 12:58:08,759 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:58:08,824 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 12:58:45,800 INFO Response Status: 200
+2024-09-26 12:59:18,383 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 12:59:18,449 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 12:59:55,187 INFO Response Status: 200
+2024-09-26 13:00:09,648 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 13:00:09,683 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 13:00:45,900 INFO Response Status: 200
