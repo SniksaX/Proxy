@@ -76,3 +76,10 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2024-09-26 13:00:09,648 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
 2024-09-26 13:00:09,683 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
 2024-09-26 13:00:45,900 INFO Response Status: 200
+2024-09-26 13:23:14,884 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 13:23:14,931 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 13:23:16,453 ERROR Error contacting TextSynth server: peer closed connection without sending complete message body (incomplete chunked read)
+2024-09-26 13:23:16,455 INFO Response Status: 500
+2024-09-26 13:23:35,505 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
+2024-09-26 13:23:35,538 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
+2024-09-26 13:24:11,855 INFO Response Status: 200

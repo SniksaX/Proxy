@@ -3,9 +3,18 @@
 from fastapi import APIRouter, Request, Header, HTTPException, UploadFile, File, Form, Response
 from fastapi.responses import JSONResponse
 from typing import Optional
+import uuid
+import os  
+
 from ..utils import generate_audio, segments_to_srt, segments_to_vtt
 
 router = APIRouter()
+
+# directory where audio files will be saved
+AUDIO_SAVE_DIRECTORY = 'static/audio'
+
+# Make sure the directory exists
+os.makedirs(AUDIO_SAVE_DIRECTORY, exist_ok=True)
 
 @router.post("/v1/audio/transcriptions")
 async def audio_transcriptions(
@@ -21,7 +30,14 @@ async def audio_transcriptions(
     if response_format not in ['json', 'text', 'srt', 'verbose_json', 'vtt']:
         raise HTTPException(status_code=400, detail=f"Unsupported response format: {response_format}")
 
+
     audio_bytes = await file.read()
+
+    # Save the audio file before transmitting it to TextSynth
+    filename = f"{uuid.uuid4()}_{file.filename}"
+    audio_path = os.path.join(AUDIO_SAVE_DIRECTORY, filename)
+    with open(audio_path, 'wb') as f:
+        f.write(audio_bytes)
 
     transcription_result = await generate_audio(
         model_name=model,
