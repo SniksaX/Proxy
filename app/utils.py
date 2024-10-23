@@ -11,12 +11,52 @@ from typing import List
 from fastapi import HTTPException
 from app.config import MODEL_MAP, TEXTSYNTH_BASE_URL, IMAGE_SAVE_DIRECTORY, IMAGE_DOMAIN
 from app.models import Message
-from typing import List, Optional
+from typing import List, Optional, Union
 
 logger = logging.getLogger(__name__)
 
 # Create the directory for storing images if it doesnt exist already
 os.makedirs(IMAGE_SAVE_DIRECTORY, exist_ok=True)
+
+# -------- Embeddings --------
+
+async def generate_embeddings(model_name: str, input_text: Union[str, List[str]]):
+    textsynth_model_name = MODEL_MAP.get(model_name)
+    if not textsynth_model_name:
+        logger.error(f"Model {model_name} not supported")
+        raise HTTPException(status_code=400, detail=f"Model {model_name} not supported")
+
+    if isinstance(input_text, str):
+        inputs = [input_text]
+    else:
+        inputs = input_text
+
+    payload = {"input": inputs}
+
+    textsynth_url = f"{TEXTSYNTH_BASE_URL}/{textsynth_model_name}/embeddings"
+    print(textsynth_url)
+
+    async with httpx.AsyncClient(timeout=10) as client:
+        try:
+            response = await client.post(textsynth_url, json=payload)
+            response.raise_for_status()
+            result = response.json()
+            print(result)  # Log result for debugging
+            data = result.get("data", [])
+            if not data:
+                logger.error("No embeddings returned from TextSynth")
+                raise HTTPException(status_code=500, detail="No embeddings returned from TextSynth")
+
+            # Extract embeddings from the "data" field
+            embeddings = [item["embedding"] for item in data]
+            return embeddings
+        except httpx.HTTPStatusError as e:
+            logger.error(f"HTTP error: {e}")
+            raise HTTPException(status_code=response.status_code, detail=str(e))
+        except Exception as e:
+            logger.error(f"Error contacting TextSynth server: {e}")
+            raise HTTPException(status_code=500, detail="Error contacting TextSynth server")
+
 
 # -------- Chat Generation --------
 
@@ -44,7 +84,7 @@ async def chat_generation(model_name: str, messages: List[Message], temperature:
     # Send the request to the TextSynth API
     textsynth_url = f"{TEXTSYNTH_BASE_URL}/{textsynth_model_name}/completions"
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=None) as client:
         try:
             response = await client.post(textsynth_url, json=payload)
             response.raise_for_status()

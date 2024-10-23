@@ -38,3 +38,20 @@ class AudioGenerationRequestBody(BaseModel):
     prompt: Optional[str] = None
     response_format: Optional[str] = 'json'
     user: Optional[str] = None
+
+
+class EmbeddingsRequestBody(BaseModel):
+    model: str
+    input: Union[str, List[str]]
+    user: Optional[str] = None
+
+class EmbeddingData(BaseModel):
+    object: str
+    embedding: List[float]
+    index: int
+
+class EmbeddingsResponseBody(BaseModel):
+    object: str
+    data: List[EmbeddingData]
+    model: str
+    usage: Dict[str, int]

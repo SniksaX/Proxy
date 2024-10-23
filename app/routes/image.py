@@ -56,3 +56,14 @@ async def image_generations(
         raise HTTPException(status_code=400, detail=f"Unsupported response format: {response_format}")
 
     return JSONResponse(content=response_body)
+
+
+#example
+#  curl -X POST "http://127.0.0.1:8000/v1/images/generations" -H "Content-Type: application/json" -d '{
+#    "model": "image",
+#    "prompt": "test",
+#    "n": 1,
+#    "size": "512x512",
+#    "response_format": "url",
+#    "user": "test_user"
+#  }'

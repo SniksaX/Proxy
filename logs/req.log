@@ -1,101 +1,269 @@
-2024-09-25 15:34:22,328 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Tell me a story.'}], 'max_tokens': 100, 'temperature': 0.7, 'stream': True}
-2024-09-25 15:34:22,356 INFO Response Status: 200
-2024-09-25 15:34:22,358 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/flan_t5_base_q8/completions "HTTP/1.1 200 OK"
-2024-09-25 15:35:55,712 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Hello, how are you?'}], 'max_tokens': 100, 'temperature': 0.7}
-2024-09-25 15:35:55,739 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/flan_t5_base_q8/completions "HTTP/1.1 200 OK"
-2024-09-25 15:35:55,833 INFO Response Status: 200
-2024-09-25 15:41:05,859 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:41:05,917 INFO HTTP Request: POST http://127.0.0.1:5000/v1/images/generations/stable_diffusion_1.4/text_to_image "HTTP/1.1 404 Not Found"
-2024-09-25 15:41:05,918 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:5000/v1/images/generations/stable_diffusion_1.4/text_to_image'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
-2024-09-25 15:41:05,918 INFO Response Status: 404
-2024-09-25 15:45:11,237 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion-1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:45:11,238 ERROR Model stable-diffusion-1.4 not supported
-2024-09-25 15:45:11,239 INFO Response Status: 400
-2024-09-25 15:45:22,176 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:45:22,177 ERROR Model stable-diffusion_1.4 not supported
-2024-09-25 15:45:22,178 INFO Response Status: 400
-2024-09-25 15:46:08,765 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:46:08,767 ERROR Model stable-diffusion_1.4 not supported
-2024-09-25 15:46:08,767 INFO Response Status: 400
-2024-09-25 15:46:10,696 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable-diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:46:10,697 ERROR Model stable-diffusion_1.4 not supported
-2024-09-25 15:46:10,697 INFO Response Status: 400
-2024-09-25 15:46:29,810 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'stable_diffusion_1.4', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:46:29,811 ERROR Model stable_diffusion_1.4 not supported
-2024-09-25 15:46:29,811 INFO Response Status: 400
-2024-09-25 15:47:01,164 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'b64_json', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:47:02,213 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
-2024-09-25 15:47:02,218 INFO Response Status: 200
-2024-09-25 15:47:10,421 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:47:11,492 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
-2024-09-25 15:47:11,496 INFO Response Status: 200
-2024-09-25 15:48:46,947 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:48:48,023 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
-2024-09-25 15:48:48,028 INFO Response Status: 200
-2024-09-25 15:48:49,394 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/6f995fec-3aa5-46e3-a9b3-f6a08c13dbb6.png | Body: Unable to read body
-2024-09-25 15:48:49,395 INFO Response Status: 404
-2024-09-25 15:48:49,442 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/favicon.ico | Body: Unable to read body
-2024-09-25 15:48:49,442 INFO Response Status: 404
-2024-09-25 15:50:21,809 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 15:50:22,880 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
-2024-09-25 15:50:22,884 INFO Response Status: 200
-2024-09-25 15:50:23,752 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/759b1137-b119-4085-be18-19e892fc7029.png | Body: Unable to read body
-2024-09-25 15:50:23,756 INFO Response Status: 200
-2024-09-25 15:50:38,768 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/759b1137-b119-4085-be18-19e892fc7029.png | Body: Unable to read body
-2024-09-25 15:50:38,770 INFO Response Status: 304
-2024-09-25 15:50:56,845 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://localhost:8000/static/images/08bda637-e6ca-43b8-a085-ca25b500d058.png | Body: Unable to read body
-2024-09-25 15:50:56,845 INFO Response Status: 200
-2024-09-25 16:57:19,753 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 16:57:20,787 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
-2024-09-25 16:57:20,790 INFO Response Status: 200
-2024-09-25 16:59:11,505 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'A futuristic city with flying cars at sunset', 'n': 1, 'size': '512x512', 'response_format': 'url', 'guidance_scale': 7.5, 'steps': 50}
-2024-09-25 16:59:12,574 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
-2024-09-25 16:59:12,577 INFO Response Status: 200
-2024-09-26 12:44:29,016 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:44:29,019 ERROR Model whisper-1 not supported
-2024-09-26 12:44:29,019 INFO Response Status: 400
-2024-09-26 12:45:20,277 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:45:20,316 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 12:45:56,939 INFO Response Status: 200
-2024-09-26 12:53:50,502 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:53:50,536 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 12:54:28,807 INFO Response Status: 200
-2024-09-26 12:55:21,230 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:55:21,262 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 12:55:57,482 INFO Response Status: 200
-2024-09-26 12:57:16,540 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:57:16,605 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 12:57:53,661 INFO Response Status: 200
-2024-09-26 12:58:08,759 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:58:08,824 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 12:58:45,800 INFO Response Status: 200
-2024-09-26 12:59:18,383 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 12:59:18,449 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 12:59:55,187 INFO Response Status: 200
-2024-09-26 13:00:09,648 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 13:00:09,683 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 13:00:45,900 INFO Response Status: 200
-2024-09-26 13:23:14,884 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 13:23:14,931 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 13:23:16,453 ERROR Error contacting TextSynth server: peer closed connection without sending complete message body (incomplete chunked read)
-2024-09-26 13:23:16,455 INFO Response Status: 500
-2024-09-26 13:23:35,505 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 13:23:35,538 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 13:24:11,855 INFO Response Status: 200
-2024-09-26 14:20:12,593 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 14:20:12,647 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 14:20:14,939 ERROR Error contacting TextSynth server: peer closed connection without sending complete message body (incomplete chunked read)
-2024-09-26 14:20:14,941 INFO Response Status: 500
-2024-09-26 14:20:35,046 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 14:20:35,084 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 14:21:14,004 INFO Response Status: 200
-2024-09-26 14:21:23,453 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 14:21:23,492 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 14:21:59,173 INFO Response Status: 200
-2024-09-26 14:22:06,060 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 14:22:06,124 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 14:22:42,362 INFO Response Status: 200
-2024-09-26 14:23:14,717 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/audio/transcriptions | Body: Unable to read body
-2024-09-26 14:23:14,779 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/whisper_large_v3_q8/transcript "HTTP/1.1 200 OK"
-2024-09-26 14:23:53,517 INFO Response Status: 200
+2024-09-27 17:33:22,031 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'test', 'n': 1, 'size': '1910x1080', 'response_format': 'url', 'user': 'test_user'}
+2024-09-27 17:33:23,112 INFO HTTP Request: POST http://127.0.0.1:8080/v1/engines/stable_diffusion_1.4/text_to_image "HTTP/1.1 200 OK"
+2024-09-27 17:33:23,116 INFO Response Status: 200
+2024-09-27 17:34:15,361 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/images/generations | Body: {'model': 'image', 'n': 2, 'size': '1910x1080', 'response_format': 'url', 'user': 'test_user'}
+2024-09-27 17:34:15,363 INFO Response Status: 422
+2024-10-23 07:38:07,160 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'gte_qwen2_1.5B_instruct_q8', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:38:10,466 INFO Response Status: 400
+2024-10-23 07:38:25,585 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:39:03,041 INFO Response Status: 400
+2024-10-23 07:39:06,993 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:39:22,930 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:39:59,339 INFO Response Status: 400
+2024-10-23 07:40:00,502 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:41:20,573 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:42:44,285 INFO Response Status: 400
+2024-10-23 07:43:54,705 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 07:44:27,086 INFO Response Status: 400
+2024-10-23 08:03:49,520 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 08:03:57,523 INFO Response Status: 400
+2024-10-23 08:04:25,222 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 08:04:31,666 INFO Response Status: 400
+2024-10-23 08:06:14,880 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 08:06:50,794 INFO Response Status: 400
+2024-10-23 08:06:56,179 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 08:08:38,684 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 08:09:04,028 INFO Response Status: 400
+2024-10-23 08:09:11,839 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog', 'user': 'test_user'}
+2024-10-23 08:09:14,900 INFO Response Status: 400
+2024-10-23 08:09:21,785 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:10:09,020 INFO Response Status: 400
+2024-10-23 08:10:09,892 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:10:13,964 INFO Response Status: 400
+2024-10-23 08:10:14,572 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:10:17,852 INFO Response Status: 400
+2024-10-23 08:10:59,982 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/images/generations | Body: {'model': 'image', 'prompt': 'test', 'n': 1, 'size': '512x512', 'response_format': 'url', 'user': 'test_user'}
+2024-10-23 08:11:08,205 INFO Response Status: 400
+2024-10-23 08:12:26,175 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:12:46,349 INFO Response Status: 400
+2024-10-23 08:12:57,107 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8000/ | Body: Unable to read body
+2024-10-23 08:12:57,108 INFO Response Status: 404
+2024-10-23 08:13:08,258 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8000/v1/embeddings | Body: Unable to read body
+2024-10-23 08:13:08,258 INFO Response Status: 405
+2024-10-23 08:13:18,051 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:13:52,406 INFO Response Status: 400
+2024-10-23 08:15:19,865 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:16:05,688 INFO Client IP: 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8000/ | Body: Unable to read body
+2024-10-23 08:16:05,689 INFO Response Status: 404
+2024-10-23 08:16:15,675 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:17:09,262 INFO Response Status: 400
+2024-10-23 08:17:42,506 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 08:24:28,781 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8000/v1/embeddings | Body: {'model': 'embeddings', 'input': 'The quick brown fox jumps over the lazy dog'}
+2024-10-23 19:18:49,595 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Hello, how are you?'}], 'temperature': 0.7, 'max_tokens': 256, 'stream': False}
+2024-10-23 19:21:00,126 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Hello, how are you?'}], 'temperature': 0.7, 'max_tokens': 256, 'stream': False}
+2024-10-23 19:21:32,129 INFO Response Status: 400
+2024-10-23 19:22:55,226 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {'model': 'chat', 'messages': [{'role': 'user', 'content': 'Hello, how are you?'}], 'temperature': 0.7, 'max_tokens': 256, 'stream': False}
+2024-10-23 19:24:57,473 INFO Response Status: 400
+2024-10-23 19:28:52,713 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:28:57,790 ERROR Error contacting TextSynth server: 
+2024-10-23 19:28:57,790 INFO Response Status: 500
+2024-10-23 19:32:35,590 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:32:40,656 ERROR Error contacting TextSynth server: 
+2024-10-23 19:32:40,657 INFO Response Status: 500
+2024-10-23 19:33:58,079 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:33:58,295 ERROR No embeddings returned from TextSynth
+2024-10-23 19:33:58,295 ERROR Error contacting TextSynth server: 
+2024-10-23 19:33:58,295 INFO Response Status: 500
+2024-10-23 19:34:05,643 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:34:05,891 ERROR No embeddings returned from TextSynth
+2024-10-23 19:34:05,891 ERROR Error contacting TextSynth server: 
+2024-10-23 19:34:05,891 INFO Response Status: 500
+2024-10-23 19:37:27,000 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:37:27,231 ERROR No embeddings returned from TextSynth
+2024-10-23 19:37:27,231 ERROR Error contacting TextSynth server: 
+2024-10-23 19:37:27,232 INFO Response Status: 500
+2024-10-23 19:38:48,843 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "gte_qwen2_1.5B_instruct_q8",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:38:48,843 ERROR Model gte_qwen2_1.5B_instruct_q8 not supported
+2024-10-23 19:38:48,843 INFO Response Status: 400
+2024-10-23 19:40:14,681 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "gte_qwen2_1.5B_instruct_q8",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:40:14,682 ERROR Model gte_qwen2_1.5B_instruct_q8 not supported
+2024-10-23 19:40:14,682 INFO Response Status: 400
+2024-10-23 19:40:23,852 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:40:24,110 ERROR No embeddings returned from TextSynth
+2024-10-23 19:40:24,110 ERROR Error contacting TextSynth server: 
+2024-10-23 19:40:24,110 INFO Response Status: 500
+2024-10-23 19:41:30,883 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:41:31,101 ERROR No embeddings returned from TextSynth
+2024-10-23 19:41:31,101 ERROR Error contacting TextSynth server: 
+2024-10-23 19:41:31,102 INFO Response Status: 500
+2024-10-23 19:43:23,844 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:43:24,091 INFO Response Status: 200
+2024-10-23 19:44:27,186 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:44:27,399 INFO Response Status: 200
+2024-10-23 19:44:35,106 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 19:44:35,344 INFO Response Status: 200
+2024-10-23 19:46:01,012 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:46:06,076 ERROR Error contacting TextSynth server: 
+2024-10-23 19:46:06,077 INFO Response Status: 500
+2024-10-23 19:48:31,573 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:48:36,606 ERROR Error contacting TextSynth server: 
+2024-10-23 19:48:36,606 INFO Response Status: 500
+2024-10-23 19:49:00,011 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:49:05,086 ERROR Error contacting TextSynth server: 
+2024-10-23 19:49:05,086 INFO Response Status: 500
+2024-10-23 19:49:47,732 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:49:52,761 ERROR Error contacting TextSynth server: 
+2024-10-23 19:49:52,761 INFO Response Status: 500
+2024-10-23 19:50:18,737 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 19:50:23,806 ERROR Error contacting TextSynth server: 
+2024-10-23 19:50:23,807 INFO Response Status: 500
+2024-10-23 20:04:29,501 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 20:04:34,530 ERROR Error contacting TextSynth server: 
+2024-10-23 20:04:34,531 INFO Response Status: 500
+2024-10-23 20:05:21,659 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 20:05:26,703 ERROR Error contacting TextSynth server: 
+2024-10-23 20:05:26,703 INFO Response Status: 500
+2024-10-23 20:05:45,564 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 20:05:52,733 INFO Response Status: 200
+2024-10-23 20:06:56,103 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat",
+  "messages": [
+    {"role": "user", "content": "Hello, how are you?"}
+  ],
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "stream": false
+}
+2024-10-23 20:07:03,326 INFO Response Status: 200
+2024-10-23 20:07:43,404 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 20:07:43,436 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:8080/v1/engines/gte_qwen2_1.5B_instruct_q8/embeddings'
+For more information check: https://httpstatuses.com/404
+2024-10-23 20:07:43,436 INFO Response Status: 404
+2024-10-23 20:07:46,220 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 20:07:46,281 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:8080/v1/engines/gte_qwen2_1.5B_instruct_q8/embeddings'
+For more information check: https://httpstatuses.com/404
+2024-10-23 20:07:46,281 INFO Response Status: 404
+2024-10-23 20:07:58,342 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings.",
+  "user": "test_user"
+}
+2024-10-23 20:07:58,544 INFO Response Status: 200
