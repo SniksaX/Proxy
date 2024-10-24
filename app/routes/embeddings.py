@@ -44,7 +44,7 @@ async def embeddings_endpoint(
 
 # Req ex : 
 # curl -X POST "http://localhost:8000/v1/embeddings" -H "Content-Type: application/json" -d '{
-#   "model": "gte_qwen2_1.5B_instruct_q8",
+#   "model": "embeddings",
 #   "input": "This is a test input for embeddings",
 #   "user": "test_user"
 # }'

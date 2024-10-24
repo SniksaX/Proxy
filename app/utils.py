@@ -12,11 +12,42 @@ from fastapi import HTTPException
 from app.config import MODEL_MAP, TEXTSYNTH_BASE_URL, IMAGE_SAVE_DIRECTORY, IMAGE_DOMAIN
 from app.models import Message
 from typing import List, Optional, Union
+from transformers import AutoTokenizer
 
 logger = logging.getLogger(__name__)
-
-# Create the directory for storing images if it doesnt exist already
+tokenizer_cache = {}
 os.makedirs(IMAGE_SAVE_DIRECTORY, exist_ok=True)
+
+# -------- Tokenizer ---------
+
+async def get_token_count(model_name: str, text: str) -> int:
+    textsynth_model_name = MODEL_MAP.get(model_name)
+    if not textsynth_model_name:
+        logger.error(f"Model {model_name} not supported for tokenization")
+        raise HTTPException(status_code=400, detail=f"Model {model_name} not supported for tokenization")
+
+    tokenize_url = f"{TEXTSYNTH_BASE_URL}/{textsynth_model_name}/tokenize"
+    payload = {"text": text}
+
+    async with httpx.AsyncClient(timeout=None) as client:
+        try:
+            response = await client.post(tokenize_url, json=payload)
+            response.raise_for_status()
+            result = response.json()
+            tokens = result.get("tokens", [])
+            token_count = len(tokens)
+            return token_count
+        except httpx.HTTPStatusError as e:
+            logger.error(f"HTTP error during tokenization: {e}")
+            raise HTTPException(status_code=response.status_code, detail=str(e))
+        except Exception as e:
+            logger.error(f"Error during tokenization: {e}")
+            raise HTTPException(status_code=500, detail="Error during tokenization")
+
+# tokenization: 
+# curl -X POST "http://localhost:8080/v1/engines/gpt2_345M_q8/tokenize" -H "Content-Type: application/json" -d '{
+#   "text": "This is a test prompt."
+# }'
 
 # -------- Embeddings --------
 
@@ -36,12 +67,12 @@ async def generate_embeddings(model_name: str, input_text: Union[str, List[str]]
     textsynth_url = f"{TEXTSYNTH_BASE_URL}/{textsynth_model_name}/embeddings"
     print(textsynth_url)
 
-    async with httpx.AsyncClient(timeout=10) as client:
+    async with httpx.AsyncClient(timeout=None) as client:
         try:
             response = await client.post(textsynth_url, json=payload)
             response.raise_for_status()
             result = response.json()
-            print(result)  # Log result for debugging
+            print(result)
             data = result.get("data", [])
             if not data:
                 logger.error("No embeddings returned from TextSynth")
@@ -89,6 +120,7 @@ async def chat_generation(model_name: str, messages: List[Message], temperature:
             response = await client.post(textsynth_url, json=payload)
             response.raise_for_status()
             result = response.json()
+            print(result)
             generated_text = result.get("text", "")
             return generated_text
         except httpx.HTTPStatusError as e:

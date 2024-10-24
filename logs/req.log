@@ -267,3 +267,191 @@ For more information check: https://httpstatuses.com/404
   "user": "test_user"
 }
 2024-10-23 20:07:58,544 INFO Response Status: 200
+2024-10-24 08:14:04,548 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings",
+  "user": "test_user"
+}
+2024-10-24 08:15:45,258 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings",
+  "user": "test_user"
+}
+2024-10-24 08:18:07,746 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings",
+  "user": "test_user"
+}
+2024-10-24 08:18:25,489 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings",
+  "user": "test_user"
+}
+2024-10-24 08:18:39,615 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/embeddings | Body: {
+  "model": "embeddings",
+  "input": "This is a test input for embeddings",
+  "user": "test_user"
+}
+2024-10-24 08:18:39,826 INFO Response Status: 200
+2024-10-24 08:40:09,568 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ],
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "stream": false
+}
+2024-10-24 08:40:09,606 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:8080/v1/engines/gpt2_345M_q8/completions'
+For more information check: https://httpstatuses.com/404
+2024-10-24 08:40:09,606 INFO Response Status: 404
+2024-10-24 08:40:19,826 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ],
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "stream": false
+}
+2024-10-24 08:40:19,861 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:8080/v1/engines/gpt2_345M_q8/completions'
+For more information check: https://httpstatuses.com/404
+2024-10-24 08:40:19,862 INFO Response Status: 404
+2024-10-24 08:40:31,656 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ],
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "stream": false
+}
+2024-10-24 08:40:31,712 ERROR HTTP error: Client error '404 Not Found' for url 'http://127.0.0.1:8080/v1/engines/gpt2_345M_q8/completions'
+For more information check: https://httpstatuses.com/404
+2024-10-24 08:40:31,713 INFO Response Status: 404
+2024-10-24 08:40:54,931 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ],
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "stream": false
+}
+2024-10-24 08:40:59,197 INFO Response Status: 200
+2024-10-24 08:42:15,195 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ],
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "stream": true
+}
+2024-10-24 08:42:15,222 INFO Response Status: 200
+2024-10-24 08:44:12,599 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+  "model": "chat", 
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ],
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "stream": false
+}
+2024-10-24 08:44:16,862 INFO Response Status: 200
+2024-10-24 09:33:58,782 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+    "model": "chat", 
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "temperature": 1.0,
+    "max_tokens": 150,
+    "stream": false
+  }
+2024-10-24 09:34:03,137 INFO Response Status: 200
+2024-10-24 09:34:31,197 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+    "model": "chat", 
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "temperature": 1.0,
+    "max_tokens": 150,
+    "stream": false
+  }
+2024-10-24 09:34:33,570 INFO Response Status: 200
+2024-10-24 09:35:17,204 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+    "model": "chat", 
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "temperature": 1.0,
+    "max_tokens": 150,
+    "stream": true
+  }
+2024-10-24 09:35:17,264 INFO Response Status: 200
+2024-10-24 09:35:29,331 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+    "model": "chat", 
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "temperature": 1.0,
+    "max_tokens": 150,
+    "stream": true
+  }
+2024-10-24 09:35:29,413 INFO Response Status: 200
+2024-10-24 09:35:43,531 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+    "model": "chat", 
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "temperature": 1.0,
+    "max_tokens": 150,
+    "stream": true
+  }
+2024-10-24 09:35:43,632 INFO Response Status: 200
+2024-10-24 09:35:54,343 INFO Client IP: 127.0.0.1 | Method: POST | URL: http://localhost:8000/v1/chat/completions | Body: {
+    "model": "chat", 
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "temperature": 1.0,
+    "max_tokens": 150,
+    "stream": false
+  }
+2024-10-24 09:35:58,504 INFO Response Status: 200
